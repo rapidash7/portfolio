@@ -14,16 +14,13 @@
   <style media="screen">
     @import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900');
     @import url('https://fonts.googleapis.com/css?family=Lato');
-    font-family: 'Lato',
-    sans-serif;
-    font-weight: 900;
-    letter-spacing: 1px;
-    word-spacing: 3px html,
+    html,
     body {
       height: 100%;
       width: 100%;
       margin: 0;
-      padding: 0
+      padding: 0;
+      font-family: 'Lato', sans-serif;
     }
 
     .fullscreen {
@@ -43,6 +40,10 @@
       margin: 60px auto
     }
 
+    header h1 {
+      font-size: 3em
+    }
+
     p {
       font-family: 'Lato', sans-serif;
       font-weight: 900;
@@ -51,15 +52,16 @@
     }
 
     #home {
-      min-height: 50vh;
-      width:auto;
+      min-height: 75vh;
+      margin: 0 auto !important;
       background-image: url(https://images.pexels.com/photos/22185/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb);
       background-size: cover;
+      background-position: 70%;
     }
 
     ul li {
       display: inline;
-      margin: 0 50px;
+      margin: 0 10px;
       letter-spacing: 3px;
       font-weight: 900;
     }
@@ -76,6 +78,11 @@
 
     #contact {
       height: 50vh !important
+    }
+
+    .pixels-photo {
+      margin: 0 !important;
+      padding: 0 !important
     }
 
     /* #loader {
@@ -102,14 +109,14 @@
     <header>
       <h1>Ashwin Naidu</h1>
       <ul>
-        <li> <a href="#home">Home</a></li>
-        <li> <a href="#about">About</a> </li>
-        <li> <a href="#photos">Photos</a> </li>
-        <li> <a href="#contact">Contact</a></li>
+        <li> <a href="#">Home</a></li>
+        <li> <a href="#">About</a> </li>
+        <li> <a href="#">Photos</a> </li>
+        <li> <a href="#">Contact</a></li>
       </ul>
     </header>
 
-    <div id="home" class="container"></div>
+    <div id="home" class=""></div>
     <div id="about" class="container center-align">
       <h3>Clicker</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
@@ -118,78 +125,60 @@
     <div id="photos" class="row container center-align">
       <h3>Clicks</h3>
 
-      <div class="col m4 s12">
+      <div class="col m4 s6">
         <div class='pixels-photo'>
-          <p>
-            <img src='https://drscdn.500px.org/photo/206781205/m%3D900/v2?webp=true&sig=de76f297505f32fcc8f58c81283aee29f12ed3016b2deb4be27d80ff105952f1' alt='Dolphin&#x27;s tail by ASHWIN NAIDU on 500px.com'>
-          </p>
+          <img class="materialboxed"  src='https://drscdn.500px.org/photo/206781205/m%3D900/v2?webp=true&sig=de76f297505f32fcc8f58c81283aee29f12ed3016b2deb4be27d80ff105952f1' alt='Dolphin&#x27;s tail by ASHWIN NAIDU on 500px.com'>
           <a href='https://500px.com/photo/206781205/dolphin-s-tail-by-ashwin-naidu' alt='Dolphin&#x27;s tail by ASHWIN NAIDU on 500px.com'></a>
         </div>
       </div>
-      <div class="col m4 s12">
+      <div class="col m4 s6">
         <div class='pixels-photo'>
-          <p>
-            <img src='https://drscdn.500px.org/photo/206375361/m%3D900/v2?webp=true&sig=0bb7e5393f828e8baf7207b41eacb4f12a94c3eb893114414c017a23c965ad0e' alt='landscape by ASHWIN NAIDU on 500px.com'>
-          </p>
+          <img class="materialboxed"  src='https://drscdn.500px.org/photo/206375361/m%3D900/v2?webp=true&sig=0bb7e5393f828e8baf7207b41eacb4f12a94c3eb893114414c017a23c965ad0e' alt='landscape by ASHWIN NAIDU on 500px.com'>
           <a href='https://500px.com/photo/206375361/landscape-by-ashwin-naidu' alt='landscape by ASHWIN NAIDU on 500px.com'></a>
         </div>
       </div>
-      <div class="col m4 s12">
+      <div class="col m4 s6">
         <div class='pixels-photo'>
-          <p>
-            <img src='https://drscdn.500px.org/photo/186397083/m%3D900/v2?webp=true&sig=d943142abaf0fb820d630328a1d434b2fdd7bb7d958fde0869157f825126f2df' alt='sky sull of stars by ASHWIN NAIDU on 500px.com'>
-          </p>
+          <img class="materialboxed"  src='https://drscdn.500px.org/photo/186397083/m%3D900/v2?webp=true&sig=d943142abaf0fb820d630328a1d434b2fdd7bb7d958fde0869157f825126f2df' alt='sky sull of stars by ASHWIN NAIDU on 500px.com'>
           <a href='https://500px.com/photo/186397083/sky-sull-of-stars-by-ashwin-naidu' alt='sky sull of stars by ASHWIN NAIDU on 500px.com'></a>
         </div>
       </div>
-      <div class="col m4 s12">
+      <div class="col m4 s6">
         <div class='pixels-photo'>
-          <p>
-            <img src='https://drscdn.500px.org/photo/71941457/m%3D900/v2?webp=true&sig=fcd51bcdb072d7cf6a50f020604cd8e2586bbabd50ca18c3315e66a3aeca47a5' alt='dung beetle by ASHWIN NAIDU on 500px.com'>
-          </p>
+          <img class="materialboxed"  src='https://drscdn.500px.org/photo/71941457/m%3D900/v2?webp=true&sig=fcd51bcdb072d7cf6a50f020604cd8e2586bbabd50ca18c3315e66a3aeca47a5' alt='dung beetle by ASHWIN NAIDU on 500px.com'>
           <a href='https://500px.com/photo/71941457/dung-beetle-by-ashwin-naidu' alt='dung beetle by ASHWIN NAIDU on 500px.com'></a>
         </div>
       </div>
 
-      <div class="col m4 s12">
+      <div class="col m4 s6">
         <div class='pixels-photo'>
-          <p>
-            <img src='https://drscdn.500px.org/photo/34153230/m%3D900/v2?webp=true&sig=a1826332fdda5500a37cc5a019c65f782d39795c3b5987bc1876d1652e33c766' alt='bananas!!! by ASHWIN NAIDU on 500px.com'>
-          </p>
+          <img class="materialboxed"  src='https://drscdn.500px.org/photo/34153230/m%3D900/v2?webp=true&sig=a1826332fdda5500a37cc5a019c65f782d39795c3b5987bc1876d1652e33c766' alt='bananas!!! by ASHWIN NAIDU on 500px.com'>
           <a href='https://500px.com/photo/34153230/bananas-by-ashwin-naidu' alt='bananas!!! by ASHWIN NAIDU on 500px.com'></a>
         </div>
       </div>
-      <div class="col m4 s12">
+      <div class="col m4 s6">
         <div class='pixels-photo'>
-          <p>
-            <img src='https://drscdn.500px.org/photo/68947849/m%3D900/v2?webp=true&sig=43a5adaf6ab3037d0212f0933e2bd3455c820b26b55917bc1ac8ed5a88611571' alt='greenscape!! by ASHWIN NAIDU on 500px.com'>
-          </p>
+          <img class="materialboxed"  src='https://drscdn.500px.org/photo/68947849/m%3D900/v2?webp=true&sig=43a5adaf6ab3037d0212f0933e2bd3455c820b26b55917bc1ac8ed5a88611571' alt='greenscape!! by ASHWIN NAIDU on 500px.com'>
           <a href='https://500px.com/photo/68947849/greenscape-by-ashwin-naidu' alt='greenscape!! by ASHWIN NAIDU on 500px.com'></a>
         </div>
       </div>
 
 
-      <div class="col m4 s12">
+      <div class="col m4 s6">
         <div class='pixels-photo'>
-          <p>
-            <img src='https://drscdn.500px.org/photo/186364647/m%3D900/v2?webp=true&sig=70b8c961cd8afded1afb4d3fad6e84ca619b09fb5db0483c0c02087d1893e82b' alt='epic sunrise by ASHWIN NAIDU on 500px.com'>
-          </p>
+          <img class="materialboxed"  src='https://drscdn.500px.org/photo/186364647/m%3D900/v2?webp=true&sig=70b8c961cd8afded1afb4d3fad6e84ca619b09fb5db0483c0c02087d1893e82b' alt='epic sunrise by ASHWIN NAIDU on 500px.com'>
           <a href='https://500px.com/photo/186364647/epic-sunrise-by-ashwin-naidu' alt='epic sunrise by ASHWIN NAIDU on 500px.com'></a>
         </div>
       </div>
-      <div class="col m4 s12">
+      <div class="col m4 s6">
         <div class='pixels-photo'>
-          <p>
-            <img src='https://drscdn.500px.org/photo/167215607/m%3D900/v2?webp=true&sig=e1a63bfe20d5c4184421857b39521f161f813ebd9912212ad735218a2d7fca03' alt='Sinhagad fort by ASHWIN NAIDU on 500px.com'>
-          </p>
+          <img class="materialboxed"  src='https://drscdn.500px.org/photo/167215607/m%3D900/v2?webp=true&sig=e1a63bfe20d5c4184421857b39521f161f813ebd9912212ad735218a2d7fca03' alt='Sinhagad fort by ASHWIN NAIDU on 500px.com'>
           <a href='https://500px.com/photo/167215607/sinhagad-fort-by-ashwin-naidu' alt='Sinhagad fort by ASHWIN NAIDU on 500px.com'></a>
         </div>
       </div>
-      <div class="col m4 s12">
+      <div class="col m4 s6">
         <div class='pixels-photo'>
-          <p>
-            <img src='https://drscdn.500px.org/photo/71893651/m%3D900/v2?webp=true&sig=a1a306f2cab345c42fc177e9773a7ffb835fd83d3c22c84d80ee21ed1102bf51' alt='small white by ASHWIN NAIDU on 500px.com'>
-          </p>
+          <img class="materialboxed"  src='https://drscdn.500px.org/photo/71893651/m%3D900/v2?webp=true&sig=a1a306f2cab345c42fc177e9773a7ffb835fd83d3c22c84d80ee21ed1102bf51' alt='small white by ASHWIN NAIDU on 500px.com'>
           <a href='https://500px.com/photo/71893651/small-white-by-ashwin-naidu' alt='small white by ASHWIN NAIDU on 500px.com'></a>
         </div>
       </div>
@@ -199,10 +188,10 @@
     <div id="contact" class="center-align">
       <h3>meet the clicker</h3>
       <ul>
-        <li> <a href="https://www.facebook.com/ashwin.naidu.16" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a> </li>
-        <li> <a href="https://www.instagram.com/rapidash7/"  target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a> </li>
-        <li> <a href="https://www.youtube.com/channel/UCnPOc6zdyxdyzVSSr_oCt5g" target="_blank"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a> </li>
-        <li> <a href="https://500px.com/rapid7ash" target="_blank"><i class="fa fa-500px fa-2x" aria-hidden="true"></i></a> </li>
+        <li> <a href="https://www.facebook.com/ashwin.naidu.16"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a> </li>
+        <li> <a href="https://www.instagram.com/rapidash7/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a> </li>
+        <li> <a href="https://www.youtube.com/channel/UCnPOc6zdyxdyzVSSr_oCt5g"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a> </li>
+        <li> <a href="https://500px.com/rapid7ash"><i class="fa fa-500px fa-2x" aria-hidden="true"></i></a> </li>
       </ul>
     </div>
 
@@ -219,6 +208,7 @@
     //   // Animate loader off screen
     //   $("#loader").fadeOut("slow");;
     // });
+    
   </script>
 </body>
 
